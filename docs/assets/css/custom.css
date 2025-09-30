@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "BonaNovaSC";
+  src: url("/assets/fonts/BonaNovaSC-Regular.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.masthead-title a {
+  font-family: "BonaNovaSC";
+  font-size: 3rem;
+}
