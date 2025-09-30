@@ -28,13 +28,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.4.6"
+          bundler-cache: true
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Install gems
-        run: |
-          cd docs
-          bundle config set path vendor/bundle
-          bundle install
       - name: Build with Jekyll
         run: |
           cd docs
