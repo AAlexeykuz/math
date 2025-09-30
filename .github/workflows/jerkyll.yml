@@ -33,13 +33,12 @@ jobs:
       - name: Install gems
         run: |
           cd docs
-          gem install bundler
+          bundle config set path vendor/bundle
           bundle install
       - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./docs
-          destination: ./_site
+        run: |
+          cd docs
+          bundle exec jekyll build -d ../../_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
