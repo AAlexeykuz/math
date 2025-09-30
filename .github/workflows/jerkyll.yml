@@ -1,5 +1,9 @@
 name: Build Jekyll site
 
+concurrency:
+  group: "jekyll-pages"
+  cancel-in-progress: true
+
 on:
   push:
     branches:
@@ -24,13 +28,13 @@ jobs:
           gem install bundler
           bundle install
 
-      - name: Build the site
-        run: |
-          cd docs
-          bundle exec jekyll build
+      # - name: Build the site
+      #   run: |
+      #     cd docs
+      #     bundle exec jekyll build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+      # - name: Deploy to GitHub Pages
+      #   uses: peaceiris/actions-gh-pages@v4
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./_site
