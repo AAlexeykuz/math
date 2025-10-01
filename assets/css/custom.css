@@ -1,11 +1,29 @@
 @font-face {
   font-family: "BonaNovaSC";
   src: url("../fonts/BonaNovaSC-Regular.ttf") format("truetype");
-  font-weight: 700;
+  font-weight: 1000;
 }
 
 .masthead-title a {
   font-family: "BonaNovaSC";
-  font-size: clamp(2.5rem, 10vw, 6.75rem);
-  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+/* Base nav links */
+.nav .nav-item a {
+  text-decoration: none; /* Remove default underline/line-through */
+  border-bottom: 2px solid transparent; /* Prepare for underline on hover/active */
+  transition: border-color 0.3s;
+  color: inherit; /* Keep text color consistent */
+}
+
+/* Hover state */
+.nav .nav-item a:hover {
+  border-bottom: 2px solid currentColor; /* Underline on hover */
+}
+
+/* Active/current link */
+.nav .nav-item a.current {
+  text-decoration: none; /* Remove line-through */
+  border-bottom: 2px solid currentColor; /* Underline the active link */
 }
