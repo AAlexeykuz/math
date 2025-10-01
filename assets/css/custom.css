@@ -2,10 +2,10 @@
   font-family: "BonaNovaSC";
   src: url("../fonts/BonaNovaSC-Regular.ttf") format("truetype");
   font-weight: 700;
-  font-style: normal;
 }
 
 .masthead-title a {
   font-family: "BonaNovaSC";
-  font-size: 5rem;
+  font-size: 6.74rem;
+  text-transform: uppercase;
 }
