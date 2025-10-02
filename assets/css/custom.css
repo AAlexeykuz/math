@@ -3,27 +3,51 @@
   src: url("../fonts/BonaNovaSC-Regular.ttf") format("truetype");
   font-weight: 1000;
 }
+@font-face {
+  font-family: "NewCM";
+  src: url("../fonts/NewCM10-Regular.otf") format("opentype");
+}
 
 .masthead-title a {
   font-family: "BonaNovaSC";
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
-/* Base nav links */
+/* everything is vibe coded */
+
 .nav .nav-item a {
-  text-decoration: none; /* Remove default underline/line-through */
-  border-bottom: 2px solid transparent; /* Prepare for underline on hover/active */
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
   transition: border-color 0.3s;
-  color: inherit; /* Keep text color consistent */
+  color: inherit;
 }
 
-/* Hover state */
 .nav .nav-item a:hover {
-  border-bottom: 2px solid currentColor; /* Underline on hover */
+  border-bottom: 2px solid currentColor;
 }
 
-/* Active/current link */
 .nav .nav-item a.current {
-  text-decoration: none; /* Remove line-through */
-  border-bottom: 2px solid currentColor; /* Underline the active link */
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
+}
+
+body {
+  font-family: "NewCM" !important;
+  font-size: 1.1rem;
+}
+
+p {
+  text-indent: 1em; /* adjust indent size */
+  margin-top: 0; /* optional: avoid extra spacing */
+  margin-bottom: 1em; /* keep paragraph spacing */
+}
+
+.related {
+  border-bottom: none !important;
+}
+
+.katex,
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
 }

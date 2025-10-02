@@ -1,6 +1,6 @@
-- title: About
-  url: /about/
-- title: Archive
+# - title: About
+#   url: /about/
+- title: History
   url: /archive/
 - title: Categories
   url: /categories/
