@@ -15,4 +15,8 @@ language: ru
     <img src="../../../../assets/images/right_triangles_problem_1.png" alt="Image" width="500" height="500">
 </p>
 
-Опишем вокруг треугольника $ ABC $ окружность. Так как $ ABC $ и $ A'B'C' $ равны и имеют общий центр, то $A'$, $B'$, $C'$ тоже лежат на этой окружности. $ \angle AOA' $ --- центральный угол $ => \angle AOA' = \overset{\frown}{AA'}$. $ \angle ACB $ - вписанный угол $ => \overset{\frown}{AB} = 2 \angle ACB $.
+Опишем вокруг треугольника $ ABC $ окружность. Так как $ ABC $ и $ A'B'C' $ равны и имеют общий центр, то $A'$, $B'$, $C'$ тоже лежат на этой окружности.
+
+$ \angle AOA' $ --- центральный угол $ => \overset{\frown}{AA'} = \angle AOA' $.
+
+$ \angle ACB $ --- вписанный угол $ => \overset{\frown}{AB} = 2 \angle ACB $.
