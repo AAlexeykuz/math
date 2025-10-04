@@ -12,7 +12,7 @@ language: ru
 <details> <summary>Ответ</summary>$S = S_{ABC} \frac{2}{1 + cos \alpha + \sqrt{3} sin \alpha} $, где $S_{ABC}$ — площадь одного треугольника, $ \alpha $ — угол, на который повёрнут один из треугольников ($ 0 < \alpha < \frac{2 \pi}{3}$).  </details> -->
 
 <p align="center">
-    <img src="{{ site.baseurl }}/assets/images/right_triangles_problem_1.png" alt="Image" width="500" height="500">
+    <img src="/{{ site.baseurl }}/assets/images/right_triangles_problem_1.png" alt="Image" width="500" height="500">
 </p>
 
 ## Решение
